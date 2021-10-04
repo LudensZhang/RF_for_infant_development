@@ -22,10 +22,15 @@ if __name__ == '__main__':
     abundance.set_index(abundance.columns[0], inplace=True)
     abundance = pd.DataFrame(abundance.values.T, columns = abundance.index, index = abundance.columns)
     metadata = pd.read_csv('Dataset/metadata.csv')
-    
+
     X, y = np.array(abundance), metadata['host_age']
     features = abundance.columns
-    
+
     buid_RFR(X, y)
+<<<<<<< HEAD
+
+
+=======
     
     
+>>>>>>> parent of 4ba19c1 (edit on pycharm)
